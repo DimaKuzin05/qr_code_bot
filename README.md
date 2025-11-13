@@ -1,0 +1,60 @@
+# 🤖 Telegram Bot (aiogram)
+
+Асинхронный Telegram-бот, созданный в рамках курсовой работы.  
+Реализует клиент-серверную архитектуру с использованием **Python**, **aiogram** и **PostgreSQL**.  
+Бот поддерживает регистрацию пользователей, FSM-диалоги, планировщик задач, экспорт данных и систему логирования.
+
+---
+
+## 🚀 Основные возможности
+
+- `/start` — регистрация нового пользователя  
+- `/help` — справка по командам  
+- `/export` — экспорт данных пользователей в CSV  
+- FSM (Finite State Machine) для интерактивных диалогов  
+- Планировщик задач (**APScheduler**) для рассылок и резервных копий  
+- Логирование событий и создание отчётов  
+- Поддержка мультиязычности (RU / EN)
+
+---
+
+## 🧩 Технологии
+
+| Компонент | Используется для |
+|------------|------------------|
+| **Python 3.10+** | основной язык |
+| **aiogram** | работа с Telegram API |
+| **asyncpg** | подключение к PostgreSQL |
+| **APScheduler** | выполнение периодических задач |
+| **python-dotenv** | загрузка конфигурации из `.env` |
+| **logging** | журналирование событий |
+| **pandas / csv** | экспорт данных в таблицы |
+
+
+## Установка и запуск
+
+### Клонирование репозитория
+```bash
+git clone https://github.com/username/telegram-aiogram-bot.git
+cd telegram-aiogram-bot
+
+#Создание виртуального окружения
+python3 -m venv .venv
+source .venv/bin/activate       # macOS / Linux
+# .venv\Scripts\activate        # Windows
+
+
+#Установка зависимостей
+#pip install -r requirements.txt
+
+
+#Настройка конфигурации
+
+#Создай файл .env в корне проекта:
+BOT_TOKEN=your_bot_token_here
+DATABASE_URL=postgresql://user:password@localhost:5432/dbname
+ADMINS=123456789
+
+#Запуск бота
+#python run.py
+
