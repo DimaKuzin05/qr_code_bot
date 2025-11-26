@@ -1,0 +1,46 @@
+# ===== Виртуальное окружение =====
+.venv/
+venv/
+env/
+
+# ===== Конфигурации и секреты =====
+.env
+.env.*
+config/*.local
+config/secrets.*
+
+# ===== Кэш Python =====
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ===== Логи =====
+logs/
+*.log
+
+# ===== Данные и бэкапы =====
+data/users.csv
+data/backups/
+data/tmp/
+*.bak
+*.csv
+*.zip
+
+# ===== Системные файлы =====
+.DS_Store
+Thumbs.db
+
+# ===== Настройки IDE =====
+.vscode/
+.idea/
+*.iml
+
+# ===== Docker (если добавишь контейнеризацию) =====
+/docker-data/
+/postgres-data/
+/redis-data/
+
+# ===== Тесты и отчёты (если будут) =====
+/coverage/
+*.pytest_cache/
