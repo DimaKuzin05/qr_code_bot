@@ -35,9 +35,6 @@
 
 Клонирование репозитория
 
-git clone https://github.com/username/telegram-aiogram-bot.git
-cd telegram-aiogram-bot
-
 #Создание виртуального окружения
 python3 -m venv .venv
 source .venv/bin/activate       # macOS / Linux
