@@ -31,15 +31,31 @@
 
 ---
 
-Активируй окружение:**
-    
-    - macOS / Linux:
-        
-    
+Установка и запуск
 
-```
-source .venv/bin/activate
+Клонирование репозитория
+
+git clone https://github.com/username/telegram-aiogram-bot.git
+cd telegram-aiogram-bot
+
+#Создание виртуального окружения
+python3 -m venv .venv
+source .venv/bin/activate       # macOS / Linux
+# .venv\Scripts\activate        # Windows
 
 
+#Установка зависимостей
+#pip install -r requirements.txt
+
+
+#Настройка конфигурации
+
+#Создай файл .env в корне проекта:
+BOT_TOKEN=your_bot_token_here
+DATABASE_URL=postgresql://user:password@localhost:5432/dbname
+ADMINS=123456789
+
+#Запуск бота
+#python run.py
 
 
