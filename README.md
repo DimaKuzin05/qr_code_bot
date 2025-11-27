@@ -32,15 +32,42 @@
 ---
 
 Установка и запуск
+**Цель:** создать чистую среду и структуру проекта.
 
-Клонирование репозитория
+1. **Создай папку проекта**, например qr_telegram_bot.
+    
+2. **Открой терминал** в этой папке.
+    
+3. **Создай виртуальное окружение:**
+    
 
-#Создание виртуального окружения
+```
 python3 -m venv .venv
-source .venv/bin/activate       # macOS / Linux
-# .venv\Scripts\activate        # Windows
+```
 
+    
+4. **Активируй окружение:**
+    
+    - macOS / Linux:
+        
+    
 
+```
+source .venv/bin/activate
+```
+
+4. -   
+        
+    - Windows:
+        
+    
+
+```
+.venv\Scripts\activate
+```
+  
+    
+5. **Создай файл** **requirements.txt** и добавь туда основные зависимости:
 #Установка зависимостей
 #pip install -r requirements.txt
 
